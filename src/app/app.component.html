@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <app-fullcalendar></app-fullcalendar> -->
+<full-calendar
+  defaultView="dayGridWeek"
+  [plugins]="calendarPlugins"
+  [weekends]="true"
+  [events]="[
+    { title: 'event 1', date: '2019-05-12' },
+    { title: 'event 2', date: '2019-05-13' }
+  ]"
+  (dateClick)="handleDateClick($event)"
+></full-calendar>
+<router-outlet></router-outlet>
